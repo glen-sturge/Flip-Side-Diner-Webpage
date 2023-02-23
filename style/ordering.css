@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&family=Raleway&family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(223, 249, 244);
+  font-family: "Lobster", cursive;
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+  font-size: 4em;
+  background-color: rgb(61, 193, 167);
+  padding: 0px;
+}
+
+#name {
+  display: flex;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-top: 20px;
+}
+
+header img {
+  padding-left: 8px;
+  padding-top: 8px;
+  height: 100px;
+  width: 100px;
+}
