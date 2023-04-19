@@ -1,0 +1,245 @@
+/* Sprint 1 - Team 3
+Author: Laura Fry   Date: Feb 25, 2023 */
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&family=Raleway&family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(223, 249, 244);
+  font-family: "Lobster", cursive;
+}
+
+.imageContainer img {
+  width: 428.33px;
+  height: 600px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 4em;
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+}
+
+.subTitle {
+  font-size: 2em;
+  opacity: 50%;
+  position: absolute;
+  bottom: 8px;
+  left: 240px;
+}
+
+header {
+  display: flex;
+  flex-wrap: nowrap;
+  color: white;
+  font-size: 2em;
+  background-color: rgb(61, 193, 167);
+  padding: 0px;
+}
+
+header img {
+  padding-left: 8px;
+  padding-top: 8px;
+  height: 100px;
+  width: 100px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 28px;
+  width: fit-content;
+}
+
+.button {
+  background-color: #ebbc7f;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  border-style: solid;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.contactBox {
+  background-color: #ebbc7f;
+  height: fit-content;
+  padding: 5px;
+  margin: 28px 28px 28px 750px;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: white;
+  font-size: 2em;
+  background-color: #e45344;
+  width: fit-content;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 120px;
+  padding: 5px;
+}
+
+.infoBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.textbox {
+  background-color: #ffa49b;
+  opacity: 50%;
+  margin-right: 120px;
+  margin-left: 90px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 700px;
+  height: fit-content;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2em;
+  color: white;
+}
+
+.hours {
+  background-color: #ffa49b;
+  opacity: 50%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 500px;
+  height: fit-content;
+  text-align: center;
+}
+
+.infoBlock2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+main img {
+  box-shadow: 10px 10px 10px;
+}
+
+#contactContainer h3 {
+  background-color: #e45344;
+  width: fit-content;
+  border-radius: 10px;
+  color: white;
+  font-size: 2em;
+  margin: auto;
+  margin-top: 50px;
+  padding: 5px;
+}
+
+#contactContainer p {
+  background-color: #ffa49b;
+  opacity: 50%;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#contactContainer img {
+  padding: 6px;
+  margin-top: 10px;
+}
+
+/* For desktop page shrinking */
+@media only screen and (max-width: 1285px) {
+  .imageContainer img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .contactBox {
+    margin: auto;
+  }
+
+  .textbox {
+    margin: auto;
+    margin-bottom: 20px;
+    width: auto;
+  }
+
+  .infoBlock {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* For iPhones */
+
+@media only screen and (max-width: 414px) {
+  .burgerPhoto {
+    display: none;
+  }
+
+  .breakfastPhoto {
+    display: none;
+  }
+
+  .title {
+    font-size: 3.5em;
+    left: 70px;
+  }
+
+  .subTitle {
+    font-size: 2em;
+    left: 160px;
+  }
+
+  .buttons {
+    font-size: 0.7em;
+    margin-left: 5px;
+    width: fit-content;
+  }
+
+  .contactBox {
+    font-size: 0.7em;
+  }
+
+  h2 {
+    margin: auto;
+    margin-top: 20px;
+  }
+}
