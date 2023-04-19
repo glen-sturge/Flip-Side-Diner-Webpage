@@ -1,3 +1,6 @@
+<!-- Sprint 1 - Team 3
+Author: Glen Sturge   Date: Feb 25, 2023 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,12 +12,198 @@
   </head>
   <body>
     <header>
-      <div id="logo">
-        <img src="../images/FlipSideLogo.png" alt="Flip Side Logo" />
+      <div id="header-block">
+        <div id="logo">
+          <img src="../images/FlipSideLogo.png" alt="Flip Side Logo" />
+        </div>
+        <div id="name">Flip Side Diner</div>
+        <div class="buttons">
+          <div class="button"><a href="./menu.html">Menu</a></div>
+          <!--Change to link when menu page added-->
+          <div class="button">
+            <a href="../index.html">Home</a>
+          </div>
+          <div class="button">
+            <a href="#contactContainer">Contact Us</a>
+          </div>
+        </div>
       </div>
-      <div id="name">Flip Side Diner</div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div id="order-form">
+        <form id="form1">
+          <div class="box">
+            <div class="label">Item</div>
+            <div class="price">Price</div>
+            <div id="qty">Quantity</div>
+          </div>
+          <hr />
+          <div class="box">
+            <div class="label"><label for="name">All Day Breakfast</label></div>
+            <div class="price">$11.99</div>
+            <div class="dec button">-</div>
+            <input
+              type="text"
+              name="qty"
+              id="1"
+              value="00"
+              class="input-field"
+            />
+            <div class="inc button">+</div>
+          </div>
+          <div class="box">
+            <div class="label">
+              <label for="name">Pancakes and Sausage</label>
+            </div>
+            <div class="price">$9.99</div>
+            <div class="dec button">-</div>
+            <input
+              type="text"
+              name="qty"
+              id="2"
+              value="00"
+              class="input-field"
+            />
+            <div class="inc button">+</div>
+          </div>
+          <div class="box">
+            <div class="label"><label for="name">Burger and Fries</label></div>
+            <div class="price">$9.99</div>
+            <div class="dec button">-</div>
+            <input
+              type="text"
+              name="qty"
+              id="3"
+              value="00"
+              class="input-field"
+            />
+            <div class="inc button">+</div>
+          </div>
+          <div class="box">
+            <div class="label">
+              <label for="name">Grilled Cheese</label>
+            </div>
+            <div class="price">$8.99</div>
+            <div class="dec button">-</div>
+            <input
+              type="text"
+              name="qty"
+              id="4"
+              value="00"
+              class="input-field"
+            />
+            <div class="inc button">+</div>
+          </div>
+          <div class="box">
+            <div class="label">
+              <label for="name">Clubhouse and Fries</label>
+            </div>
+            <div class="price">$10.99</div>
+            <div class="dec button">-</div>
+            <input
+              type="text"
+              name="qty"
+              id="5"
+              value="00"
+              class="input-field"
+            />
+            <div class="inc button">+</div>
+          </div>
+          <div class="box">
+            <div class="label">
+              <label for="name">Grilled Chicken and Fries</label>
+            </div>
+            <div class="price">$12.99</div>
+            <div class="dec button">-</div>
+            <input
+              type="text"
+              name="qty"
+              id="6"
+              value="00"
+              class="input-field"
+            />
+            <div class="inc button">+</div>
+          </div>
+          <div class="box">
+            <div class="label"><label for="name">Fries</label></div>
+            <div class="price">$4.99</div>
+            <div class="dec button">-</div>
+            <input
+              type="text"
+              name="qty"
+              id="7"
+              value="00"
+              class="input-field"
+            />
+            <div class="inc button">+</div>
+          </div>
+          <div class="box">
+            <div class="label"><label for="name">Milkshake</label></div>
+            <div class="price">$5.99</div>
+            <div class="dec button">-</div>
+            <input
+              type="text"
+              name="qty"
+              id="8"
+              value="00"
+              class="input-field"
+            />
+            <div class="inc button">+</div>
+          </div>
+          <div class="box">
+            <div class="label"><label for="name">Ice Cream Float</label></div>
+            <div class="price">$6.99</div>
+            <div class="dec button">-</div>
+            <input
+              type="text"
+              name="qty"
+              id="9"
+              value="00"
+              class="input-field"
+            />
+            <div class="inc button">+</div>
+          </div>
+
+          <div id="submit"><input type="submit" value="Add To Order" /></div>
+        </form>
+      </div>
+
+      <div id="pre-order">
+        <!-- <p>Please fill in all the fields</p> -->
+        <table>
+          <thead id="rec-head">
+            <th class="receipt">Item</th>
+            <th class="receipt">Quantity</th>
+            <th class="receipt">Price</th>
+            <th class="receipt">Subtotal</th>
+          </thead>
+          <tbody id="list">
+            <!-- <tr><td>Item</td>Quantity<td></td><td>Price</td><td>Subtotal</td></tr> -->
+          </tbody>
+        </table>
+      </div>
+      <div id="totals">
+        Subtotal:
+        <div id="subtotal">$0.00</div>
+        HST:
+        <div id="hst">$0.00</div>
+        Total Due:
+        <div id="due">$0.00</div>
+      </div>
+    </main>
+    <footer>
+      <div id="contactContainer">
+        <h3>Contact</h3>
+        <p>
+          123 Sample Street, St. John's, NL <br />t:(709)123-4567 &nbsp; &nbsp;
+          &nbsp; e:info@flipsidediner.ca <br />
+          <img src="../images/icons/Instagram.svg" />
+          <img src="../images/icons/Facebook.svg" />
+          <img src="../images/icons/Youtube.svg" />
+          <img src="../images/icons/Twitter.svg" />
+        </p>
+      </div>
+    </footer>
+    <script src="../scripts/ordering.js"></script>
   </body>
 </html>

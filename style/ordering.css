@@ -1,3 +1,6 @@
+/* Sprint 1 - Team 3
+Author: Glen Sturge   Date: Feb 25, 2023 */
+
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&family=Raleway&family=Roboto:wght@300&display=swap");
 
 * {
@@ -13,16 +16,20 @@ body {
 
 header {
   display: flex;
+  justify-content: center;
   flex-wrap: nowrap;
   color: white;
-  font-size: 4em;
+  font-size: 3em;
   background-color: rgb(61, 193, 167);
   padding: 0px;
 }
 
-#name {
+#header-block {
   display: flex;
-  overflow: hidden;
+}
+
+#name {
+  text-shadow: 3px 3px black;
   padding-left: 16px;
   padding-top: 20px;
 }
@@ -32,4 +39,284 @@ header img {
   padding-top: 8px;
   height: 100px;
   width: 100px;
+}
+
+header .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 28px;
+  width: 300px;
+}
+
+header .button {
+  background-color: #ebbc7f;
+  width: fit-content;
+  height: fit-content;
+  font-size: 0.3em;
+  border-radius: 10px;
+  border-style: solid;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#order-form {
+  border-radius: 8px;
+  margin-top: 32px;
+  background-color: rgb(231, 177, 177);
+  width: 550px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  width: 500px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .label,
+.price {
+  width: 160px;
+  /* border: 1px solid red; */
+}
+
+.box .price {
+  text-align: center;
+}
+
+.box input {
+  width: 20px;
+  margin: 0 4px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+}
+
+.box .button:active {
+  background-color: grey;
+}
+
+.dec,
+.inc {
+  font-family: sans-serif;
+  background-color: rgb(247, 207, 207);
+  width: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+#submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+hr {
+  height: 1.5px;
+  border-width: 0;
+  color: black;
+  background-color: black;
+}
+
+.box #qty {
+  text-align: center;
+  width: 68px;
+}
+
+#pre-order,
+#totals {
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid rgb(61, 193, 167);
+  background-color: rgb(255, 251, 246);
+  width: 550px;
+  height: auto;
+}
+
+#pre-order {
+  margin-top: 32px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: none;
+}
+
+#totals {
+  padding-top: 32px;
+  border-radius: 0 0 8px 8px;
+  border-top: none;
+}
+
+.receipt {
+  width: 120px;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+table thead th {
+  font-weight: normal;
+  border-bottom: 2px solid #000;
+}
+
+td {
+  text-align: center;
+}
+
+#contactContainer h3 {
+  background-color: #e45344;
+  width: fit-content;
+  border-radius: 10px;
+  color: white;
+  font-size: 2em;
+  margin: auto;
+  margin-top: 50px;
+  padding: 5px;
+}
+
+#contactContainer p {
+  background-color: #ffa49b;
+  opacity: 50%;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#contactContainer img {
+  padding: 6px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1250px) {
+  #name {
+    font-size: 1em;
+    padding-left: 25px;
+  }
+
+  #logo img {
+    width: 75px;
+    height: inherit;
+  }
+
+  hr {
+    margin: 24px;
+  }
+
+  #pre-order,
+  #totals,
+  #order-form {
+    width: 500px;
+    margin: none;
+  }
+
+  #pre-order,
+  #totals {
+    font-size: 0.75em;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  #submit {
+    justify-content: center;
+  }
+
+  header .buttons {
+    width: fit-content;
+  }
+
+  .box .label,
+  .price {
+    width: 100px;
+    justify-content: space-between;
+  }
+}
+
+/* For iPhones */
+
+@media only screen and (max-width: 414px) {
+  #name {
+    font-size: 0.5em;
+  }
+
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #logo img {
+    height: 100px;
+    width: inherit;
+  }
+
+  #pre-order,
+  #totals,
+  #order-form {
+    width: 414px;
+    margin: none;
+  }
+
+  #pre-order,
+  #totals {
+    font-size: 0.75em;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  #submit {
+    justify-content: center;
+  }
+
+  #header-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .buttons {
+    width: fit-content;
+  }
+
+  .box .label,
+  .price {
+    width: 100px;
+    justify-content: space-between;
+  }
+
+  #contactContainer {
+    width: 414px;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+  }
+
+  #contactContainer p {
+    width: 350px;
+    justify-content: center;
+  }
+
+  #footer {
+    margin: autonone;
+  }
 }
